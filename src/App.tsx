@@ -1,7 +1,11 @@
+import { YMaps } from "@pbe/react-yandex-maps"
+import GeocodeMap from "./components/Layout/Geocode-map"
 
 function App() {
   return (
-    <h1 className="react">react-yandex-map</h1>
+    <YMaps>
+      <GeocodeMap />
+    </YMaps>
   )
 }
 
