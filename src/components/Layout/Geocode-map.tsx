@@ -6,13 +6,22 @@ const MapStyled = styled(Map)`
   height: 700px;
 `;
 
+const center = [55.739172009448396, 52.395032611328105];
+const zoom = 12;
+
 const GeocodeMap = () => {
+
+  const handleClickMap = () => {
+    console.log("click map")
+  }
+
   return (
     <MapStyled
       defaultState={{
-        center: [55.739172009448396, 52.395032611328105],
-        zoom: 12,
+        center,
+        zoom,
       }}
+      onClick={handleClickMap}
     />
   );
 };
