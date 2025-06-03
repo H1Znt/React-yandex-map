@@ -80,7 +80,6 @@ const NonPanoramaWrapper = styled(Flex)`
   align-items: center;
 
   border-radius: 10px;
-  border: 1px solid grey;
 
   background-color: #f0f0f0;
   color: #999;
