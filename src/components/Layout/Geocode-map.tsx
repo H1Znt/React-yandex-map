@@ -1,6 +1,6 @@
 import { Map, useYMaps, Placemark, Panorama } from "@pbe/react-yandex-maps";
 import { useState } from "react";
-import { type IGeocodeResult } from "yandex-maps";
+// import type { IGeocodeResult } from "yandex-maps";
 import { Divider, Flex, Typography } from "antd";
 import { FrownOutlined } from "@ant-design/icons";
 import styled from "styled-components";
@@ -134,7 +134,7 @@ const GeocodeMap = () => {
   };
 
   // Принимает результат обратного геокодирования наших координат из хука ymaps
-  function handleGeoResult(result: IGeocodeResult) {
+  function handleGeoResult(result: ymaps.IGeocodeResult) {
     const firstGeoObject = result.geoObjects.get(0); // первый релевантный объект, который соответствует запросу
 
     if (firstGeoObject) {
