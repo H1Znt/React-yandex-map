@@ -1,6 +1,5 @@
 import { Map, useYMaps, Placemark, Panorama } from "@pbe/react-yandex-maps";
 import { useEffect, useState } from "react";
-// import type { IGeocodeResult } from "yandex-maps";
 import {
   Button,
   Divider,
