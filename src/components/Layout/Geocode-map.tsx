@@ -185,6 +185,19 @@ const GeocodeMap = () => {
     const objectArray = localStorageObjects
       ? JSON.parse(localStorageObjects)
       : [];
+      
+    const isDuplicate = objectArray.some(
+      (obj: ISavedObject) =>
+        obj.address?.location === address?.location &&
+        obj.address?.route === address?.route &&
+        obj.coordinates?.[0] === coordinates?.[0] &&
+        obj.coordinates?.[1] === coordinates?.[1]
+    );
+
+    if (isDuplicate) {
+      alert("Этот адрес уже сохранён.");
+      return;
+    }
 
     const newObject = {
       id: uuidv4(),
