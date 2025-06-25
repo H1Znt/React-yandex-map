@@ -6,3 +6,18 @@
 > React, Vite, TypeScript, React Yandex Maps.<br>
 > HTML, Uuid, Styled Component, Ant Design.<br>
 
+### Главная страница
+
+![Главная страница](./public/main-desktop.png)
+
+### Выбор точки
+
+![Выбор точки](./public/selected-point.png)
+
+### Сохранение точки
+
+![Сохранение точки](./public/saved-point.png)
+
+### Если панорама не найдена
+
+![Если панорама не найдена](./public/panorama-was-not-found.png)
